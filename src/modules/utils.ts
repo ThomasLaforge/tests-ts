@@ -4,7 +4,7 @@ export function createEmptyArray(size: number) {
 
 export function explodeOneNumber(numA: number) {
   let copy = numA;
-  let array = [];
+  const array = [];
 
   while (copy !== 0) {
     array.push(copy % 10);

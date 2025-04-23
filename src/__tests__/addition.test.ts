@@ -1,9 +1,9 @@
-import {
-  sumSmallNumbers,
-  sum,
-  fastSum,
-} from "../modules/addition";
 import { describe, expect, test } from "vitest";
+import {
+  fastSum,
+  sum,
+  sumSmallNumbers,
+} from "../modules/addition";
 
 describe("Sum only for small numbers", () => {
   describe("errors on parameters", () => {

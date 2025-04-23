@@ -1,5 +1,5 @@
+import { describe, expect, test } from 'vitest';
 import { puissance } from '../modules/puissance';
-import { describe, test, expect } from 'vitest';
 
 describe('puissance', () => { 
     const anyNumber = 99999;
@@ -10,7 +10,7 @@ describe('puissance', () => {
         });
 
         test('zero', () => {
-            expect(puissance(99999, 0)).toBe(1);
+            expect(puissance(anyNumber, 0)).toBe(1);
         });
 
         test('one', () => {

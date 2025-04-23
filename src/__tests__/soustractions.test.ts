@@ -1,5 +1,5 @@
+import { describe, expect, test } from 'vitest';
 import { substraction } from '../modules/substraction';
-import { describe, test, expect } from 'vitest';
 
 describe('soustraction', () => { 
     describe('Classic', () => {

@@ -5,7 +5,7 @@ export function sumSmallNumbers(a: number, b: number): number{
         throw new Error("Your are cheating !")
     }
     return a + b;  
-};
+}
 
 export function fastSum(a: number, b: number): number {
     if(a === -b){
@@ -56,7 +56,7 @@ export function sum(numA: number, numB: number): number{
     catch(e){
         const explodes = explodeNumbers(numA, numB);
         let retenue = 0;
-        let smallSumsConcat = explodes.map( ([a, b], i) => {
+        const smallSumsConcat = explodes.map( ([a, b], i) => {
             let result = sumSmallNumbers(a, b) + retenue;
             if(result >= 10 && i < explodes.length - 1){
                 retenue = 1;
@@ -73,4 +73,4 @@ export function sum(numA: number, numB: number): number{
 
         return intResult;
     }
-};
+}

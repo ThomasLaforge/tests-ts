@@ -34,7 +34,7 @@ export function substraction(a: number, b: number) : number {
     const explodes = explodeNumbers(a, b);
     let retenue = 0;
 
-    let smallSubsConcat = explodes.map(([numA, numB]) => {
+    const smallSubsConcat = explodes.map(([numA, numB]) => {
       const substractor = numB + retenue;
       const valueToSubstract = numA < substractor ? numA + 10 : numA;
       retenue = valueToSubstract > 9 ? 1 : 0;

@@ -1,7 +1,7 @@
+import { describe, expect, test } from "vitest";
 import {
     multiplication
 } from "../modules/multiplication";
-import { describe, expect, test } from "vitest";
 
 
 describe("Multiplication", () => {
