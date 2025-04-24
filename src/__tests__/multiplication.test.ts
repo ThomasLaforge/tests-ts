@@ -58,7 +58,6 @@ describe("Multiplication", () => {
             test("zero only", () => {
                 expect(multiplication(0, 0)).toBe(0);
             });
-
         });
 
         describe("one", () => {
